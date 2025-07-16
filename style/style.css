@@ -3708,6 +3708,7 @@ textarea.w-select {
   overflow: hidden;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .image-26 {
@@ -3759,7 +3760,6 @@ textarea.w-select {
 
 .footer {
   background-color: var(--pink);
-  overflow: hidden;
 }
 
 .footer.mob {

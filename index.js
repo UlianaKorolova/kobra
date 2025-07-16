@@ -83,7 +83,7 @@ form.addEventListener("submit", async function (e) {
 });
 
 document.getElementById("next-to-availability").addEventListener("click", function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
 
 
     const name = document.getElementById("name").value.trim();
@@ -123,3 +123,14 @@ function updateThumbPosition() {
 
 range.addEventListener('input', updateThumbPosition);
 window.addEventListener('load', updateThumbPosition);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+        // Ukloni sve elemente koji u klasi imaju "desktop"
+        document.querySelectorAll('[class*="desktop"]').forEach(el => {
+            el.remove();
+        });
+    }
+});
